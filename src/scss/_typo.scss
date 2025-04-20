@@ -1,0 +1,68 @@
+$base-font-size: 16px;
+
+// Typography styles
+body {
+  font-size: $base-font-size;
+  line-height: 1.5;
+
+  h1 {
+    font-size: $base-font-size * 2.5; // 35px
+    margin-bottom: 1em;
+    font-weight: 700;
+  }
+
+  h2 {
+    font-size: $base-font-size * 2; // 28px
+    margin-bottom: 0.8em;
+    font-weight: 700;
+  }
+
+  h3 {
+    font-size: $base-font-size * 1.5; // 21px
+    margin-bottom: 0.6em;
+    font-weight: 500;
+  }
+
+  p {
+    margin-bottom: 1em;
+  }
+
+  .bold {
+    font-weight: 700;
+  }
+
+  .italic {
+    font-style: italic;
+  }
+
+  .underline {
+    text-decoration: underline;
+  }
+
+  .small {
+    font-size: $base-font-size * 0.857; // 12px
+    font-weight: 200;
+  }
+
+  .large {
+    font-size: $base-font-size * 1.285; // 18px
+    font-weight: 500;
+  }
+
+  ul {
+    margin: 1em 0;
+    padding-right: 2em;
+
+    li {
+      margin-bottom: 0.5em;
+    }
+  }
+
+  blockquote {
+    margin: 1.5em 2em;
+    padding: 1em;
+    border-right: 4px solid #ccc;
+    font-style: italic;
+    font-weight: 200;
+  }
+}

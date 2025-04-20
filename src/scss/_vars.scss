@@ -1,0 +1,32 @@
+//! START Colors
+// Primary Colors
+$primary-dark: #024034;
+$primary: #12a652;
+$primary-light: #13f274;
+
+// Secondary Colors
+$secondary-light: #f2dbce;
+$secondary-dark: #733122;
+
+// Semantic Colors
+$success: $primary;
+$info: $primary-light;
+$warning: $secondary-light;
+$error: $secondary-dark;
+
+// Text Colors
+$text-primary: #024034;
+$text-secondary: #733122;
+$text-light: #f2dbce;
+$text-dark: #024034;
+
+// Background Colors
+$bg-primary: #f5f5f5; // Light gray that complements the existing color scheme
+$bg-secondary: #f2dbce;
+$bg-dark: #024034;
+$bg-light: #f2dbce;
+
+// Border Colors
+$border-light: #f2dbce;
+$border-dark: #024034;
+//! END Colors
