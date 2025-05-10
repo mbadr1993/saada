@@ -1,0 +1,85 @@
+<section class="w-full flex">
+  <form
+    class="w-full h-full bg-white p-6 md:p-20 flex flex-col justify-center md:w-4/12"
+  >
+    <div class="w-full flex flex-col mb-4">
+      <h1 class="text-3xl font-bold mb-2 text-emerald-800">
+        {{ "signIn.hello" | translate }}
+      </h1>
+      <p>{{ "signIn.formParagraph" | translate }}</p>
+    </div>
+
+    <div class="w-full flex flex-col mb-2">
+      <label class="block mb-1" for="userName">
+        {{ "signIn.userName" | translate }}</label
+      >
+      <input
+        id="userName"
+        type="text"
+        placeholder="{{ 'signIn.userName' | translate }}"
+        class="px-4 pt-3 pb-2 border border-gray-300 rounded-lg bg-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-emerald-700 focus:border-emerald-700 transition"
+      />
+    </div>
+    <div class="w-full flex flex-col">
+      <label class="block mb-1" for="password">
+        {{ "signIn.password" | translate }}</label
+      >
+      <input
+        id="userName"
+        type="password"
+        placeholder="{{ 'signIn.password' | translate }}"
+        class="px-4 pt-3 pb-2 border border-gray-300 rounded-lg bg-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-emerald-700 focus:border-emerald-700 transition"
+      />
+    </div>
+    <div class="flex items-center justify-between my-4">
+      <!-- Remember Me -->
+      <div class="flex gap-3">
+        <div class="group grid size-4 grid-cols-1">
+          <input
+            aria-describedby="rememberMe"
+            name="rememberMe"
+            id="rememberMe"
+            type="checkbox"
+            class="col-start-1 row-start-1 appearance-none rounded-sm border border-gray-300 bg-white checked:border-emerald-700 checked:bg-emerald-700 indeterminate:border-emerald-700 indeterminate:bg-emerald-700 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-emerald-700 disabled:border-gray-300 disabled:bg-gray-100 disabled:checked:bg-gray-100 forced-colors:appearance-auto"
+          />
+          <svg
+            class="pointer-events-none col-start-1 row-start-1 size-3.5 self-center justify-self-center stroke-white group-has-disabled:stroke-gray-950/25"
+            viewBox="0 0 14 14"
+            fill="none"
+          >
+            <path
+              class="opacity-0 group-has-checked:opacity-100"
+              d="M3 8L6 11L11 3.5"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+            <path
+              class="opacity-0 group-has-indeterminate:opacity-100"
+              d="M3 7H11"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+          </svg>
+        </div>
+        <div class="text-sm/6">
+          <label for="rememberMe">{{ "signIn.rememberMe" | translate }}</label>
+        </div>
+      </div>
+      <!-- Forgot Password -->
+      <a href="/forgot-password" class="text-sm">
+        {{ "signIn.forgotPassword" | translate }}</a
+      >
+    </div>
+    <button
+      type="button"
+      class="w-full bg-emerald-700 hover:bg-emerald-800 text-white font-semibold px-4 pt-3 pb-2 rounded-lg transition disabled:opacity-50 disabled:cursor-not-allowed"
+    >
+      {{ "signIn.signIn" | translate }}
+    </button>
+  </form>
+  <div class="hidden md:flex md:w-8/12 bg-amber-300">
+    <img src="./signin.jpg" class="object-cover w-full h-full" />
+  </div>
+</section>

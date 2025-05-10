@@ -14,6 +14,5 @@ export class AppComponent {
     translate.addLangs(['en', 'ar']);
     translate.setDefaultLang('ar');
     translate.use('ar');
-    console.log(translate.currentLang);
   }
 }

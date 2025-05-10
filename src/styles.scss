@@ -1,2 +1,19 @@
-/* You can add global styles to this file, and also import other style files */
-@use "./scss/main";
+@import "tailwindcss";
+
+body,
+main,
+html {
+  width: 100dvw;
+  height: 100dvh;
+  font-family: "Tajawal", sans-serif;
+  @apply bg-gray-100;
+  @apply text-gray-900;
+}
+
+button {
+  cursor: pointer;
+}
+
+a {
+  @apply text-amber-600 hover:text-amber-700 transition;
+}
