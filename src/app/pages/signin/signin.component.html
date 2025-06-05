@@ -1,5 +1,7 @@
 <section class="w-full flex">
   <form
+    [formGroup]="form"
+    (ngSubmit)="signIn()"
     class="w-full h-full bg-white p-6 md:p-20 flex flex-col justify-center md:w-4/12"
   >
     <div class="w-full flex flex-col mb-4">
@@ -16,20 +18,46 @@
       <input
         id="userName"
         type="text"
+        formControlName="username"
         placeholder="{{ 'signIn.userName' | translate }}"
-        class="px-4 pt-3 pb-2 border border-gray-300 rounded-lg bg-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-emerald-700 focus:border-emerald-700 transition"
+        class="px-4 pt-3 pb-2 border rounded-lg bg-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-emerald-700 focus:border-emerald-700 transition"
+        [ngClass]="{
+          'border-rose-600':
+            form.get('username')?.touched && form.get('username')?.invalid,
+          'border-gray-300': !(
+            form.get('username')?.touched && form.get('username')?.invalid
+          )
+        }"
       />
+      @if(form.get('username')?.touched && form.get('username')?.invalid) {
+      <div class="text-rose-600 text-xs mt-1">
+        {{ "signIn.usernameRequired" | translate }}
+      </div>
+      }
     </div>
     <div class="w-full flex flex-col">
       <label class="block mb-1" for="password">
         {{ "signIn.password" | translate }}</label
       >
       <input
-        id="userName"
+        id="password"
         type="password"
+        formControlName="password"
         placeholder="{{ 'signIn.password' | translate }}"
-        class="px-4 pt-3 pb-2 border border-gray-300 rounded-lg bg-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-emerald-700 focus:border-emerald-700 transition"
+        class="px-4 pt-3 pb-2 border rounded-lg bg-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-emerald-700 focus:border-emerald-700 transition"
+        [ngClass]="{
+          'border-rose-600':
+            form.get('password')?.touched && form.get('password')?.invalid,
+          'border-gray-300': !(
+            form.get('password')?.touched && form.get('password')?.invalid
+          )
+        }"
       />
+      @if(form.get('password')?.touched && form.get('password')?.invalid) {
+      <div class="text-rose-600 text-xs mt-1">
+        {{ "signIn.passwordRequired" | translate }}
+      </div>
+      }
     </div>
     <div class="flex items-center justify-between my-4">
       <!-- Remember Me -->
@@ -40,6 +68,7 @@
             name="rememberMe"
             id="rememberMe"
             type="checkbox"
+            formControlName="rememberMe"
             class="col-start-1 row-start-1 appearance-none rounded-sm border border-gray-300 bg-white checked:border-emerald-700 checked:bg-emerald-700 indeterminate:border-emerald-700 indeterminate:bg-emerald-700 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-emerald-700 disabled:border-gray-300 disabled:bg-gray-100 disabled:checked:bg-gray-100 forced-colors:appearance-auto"
           />
           <svg
@@ -73,10 +102,34 @@
       >
     </div>
     <button
-      type="button"
-      class="w-full bg-emerald-700 hover:bg-emerald-800 text-white font-semibold px-4 pt-3 pb-2 rounded-lg transition disabled:opacity-50 disabled:cursor-not-allowed"
+      type="submit"
+      [disabled]="form.invalid || loading"
+      class="w-full bg-emerald-700 hover:bg-emerald-800 text-white font-semibold px-4 pt-3 pb-2 rounded-lg transition disabled:opacity-50 disabled:cursor-not-allowed flex items-center justify-center relative"
     >
-      {{ "signIn.signIn" | translate }}
+      <span>{{ "signIn.signIn" | translate }}</span>
+      @if(loading){
+      <ng-container>
+        <svg
+          class="animate-spin h-5 w-5 text-white absolute end-3 my-auto top-3"
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+        >
+          <circle
+            class="opacity-25"
+            cx="12"
+            cy="12"
+            r="10"
+            stroke="currentColor"
+            stroke-width="4"
+          ></circle>
+          <path
+            class="opacity-75"
+            fill="currentColor"
+            d="M4 12a8 8 0 018-8v4a4 4 0 00-4 4H4z"
+          ></path>
+        </svg> </ng-container
+      >}
     </button>
   </form>
   <div class="hidden md:flex md:w-8/12 bg-amber-300">

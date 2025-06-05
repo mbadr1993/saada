@@ -6,6 +6,8 @@
     "password": "كلمة المرور",
     "signIn": "تسجيل الدخول",
     "forgotPassword": "نسيت كلمة المرور؟",
-    "rememberMe": "تذكرني"
+    "rememberMe": "تذكرني",
+    "usernameRequired": "اسم المستخدم مطلوب",
+    "passwordRequired": "كلمة المرور مطلوبة"
   }
 }
