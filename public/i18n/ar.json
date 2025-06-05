@@ -8,6 +8,7 @@
     "forgotPassword": "نسيت كلمة المرور؟",
     "rememberMe": "تذكرني",
     "usernameRequired": "اسم المستخدم مطلوب",
-    "passwordRequired": "كلمة المرور مطلوبة"
+    "passwordRequired": "كلمة المرور مطلوبة",
+    "invalidCredentials": "اسم المستخدم أو كلمة المرور غير صحيحة"
   }
 }

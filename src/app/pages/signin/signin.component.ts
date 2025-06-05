@@ -51,6 +51,7 @@ interface MyFormModel {
 export class SigninComponent {
   form: FormGroup;
   loading = false;
+  loginError = false;
 
   constructor(
     private authService: AuthService,
@@ -72,6 +73,7 @@ export class SigninComponent {
       return;
     }
     this.loading = true;
+    this.loginError = false;
     const { username, password, rememberMe } = this.form.value;
     try {
       // Set persistence based on rememberMe
@@ -102,6 +104,7 @@ export class SigninComponent {
       });
       this.router.navigate(['/dashboard']);
     } catch (error: any) {
+      this.loginError = true;
       console.error(error.message || error);
     } finally {
       this.loading = false;
