@@ -1,1 +1,30 @@
-{}
+{
+  "signIn": {
+    "hello": "Welcome...",
+    "formParagraph": "Enter your credentials to sign in to your account",
+    "userName": "Username",
+    "password": "Password",
+    "signIn": "Sign In",
+    "forgotPassword": "Forgot password?",
+    "rememberMe": "Remember me",
+    "usernameRequired": "Username is required",
+    "passwordRequired": "Password is required",
+    "invalidCredentials": "Invalid username or password"
+  },
+  "dashboard": {
+    "title": "Dashboard",
+    "welcome": "Welcome to your dashboard"
+  },
+  "settings": {
+    "title": "Settings",
+    "subtitle": "Manage your application settings below.",
+    "students": "Students",
+    "studentsDesc": "Manage student accounts and permissions.",
+    "teachers": "Teachers",
+    "teachersDesc": "Manage teacher accounts and roles.",
+    "groups": "Groups",
+    "groupsDesc": "Organize users into groups for easier management.",
+    "challenges": "Challenges",
+    "challengesDesc": "Create and manage challenges for users."
+  }
+}

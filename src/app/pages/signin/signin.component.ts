@@ -16,37 +16,28 @@ import {
   browserSessionPersistence,
 } from '@angular/fire/auth';
 import { Auth } from '@angular/fire/auth';
-interface Group1 {
-  field1: string;
-  field2: string;
-}
-
-interface Group2 {
-  field3: string;
-  field4: string;
-}
-
-interface Group3 {
-  field5: string;
-  field6: string;
-}
-
-interface Group4 {
-  field7: string;
-  field8: string;
-}
-
-interface MyFormModel {
-  group1: Group1;
-  group2: Group2;
-  group3: Group3;
-  group4: Group4;
-}
-
+import { trigger, transition, style, animate } from '@angular/animations';
 @Component({
   imports: [CommonModule, TranslateModule, ReactiveFormsModule],
   templateUrl: './signin.component.html',
   styleUrl: './signin.component.scss',
+  animations: [
+    trigger('fadeInOut', [
+      transition(':enter', [
+        style({ opacity: 0, transform: 'translateY(-10px)' }),
+        animate(
+          '250ms ease',
+          style({ opacity: 1, transform: 'translateY(0)' })
+        ),
+      ]),
+      transition(':leave', [
+        animate(
+          '250ms ease',
+          style({ opacity: 0, transform: 'translateY(-10px)' })
+        ),
+      ]),
+    ]),
+  ],
 })
 export class SigninComponent {
   form: FormGroup;

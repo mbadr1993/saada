@@ -10,6 +10,7 @@ import {
   TranslateLoader,
   provideTranslateService,
 } from '@ngx-translate/core';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { routes } from './app.routes';
 import { HttpClient, provideHttpClient } from '@angular/common/http';
@@ -45,6 +46,7 @@ export const appConfig: ApplicationConfig = {
           deps: [HttpClient],
         },
       }),
+      BrowserAnimationsModule,
     ]),
     provideFirebaseApp(() => initializeApp(firebaseConfig)),
     provideAuth(() => getAuth()),

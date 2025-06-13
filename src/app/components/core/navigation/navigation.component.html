@@ -1,1 +1,161 @@
-<p>navigation works!</p>
+<nav
+  class="fixed gap-1 bottom-5 left-1/2 -translate-x-1/2 md:right-auto md:left-5 md:translate-x-0 max-w-sm md:w-auto md:max-w-none z-50 bg-white shadow-lg rounded-full p-1 flex items-center justify-center md:justify-end mx-auto border border-gray-100"
+>
+  <a
+    routerLink="/dashboard"
+    routerLinkActive="bg-emerald-600 stroke-white hover:bg-emerald-600"
+    class="flex items-center justify-center gap-2 p-3 rounded-full cursor-pointer stroke-gray-500 transition-colors hover:bg-emerald-50 cursor-pointer"
+    title="الرئيسية"
+    aria-label="الرئيسية"
+  >
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      class="h-6 w-6 text-inherit"
+      viewBox="0 0 24 24"
+      fill="none"
+    >
+      <path d="M12 15L12 18" stroke-width="1.5" stroke-linecap="round" />
+      <path
+        d="M22 12.2039V13.725C22 17.6258 22 19.5763 20.8284 20.7881C19.6569 22 17.7712 22 14 22H10C6.22876 22 4.34315 22 3.17157 20.7881C2 19.5763 2 17.6258 2 13.725V12.2039C2 9.91549 2 8.77128 2.5192 7.82274C3.0384 6.87421 3.98695 6.28551 5.88403 5.10813L7.88403 3.86687C9.88939 2.62229 10.8921 2 12 2C13.1079 2 14.1106 2.62229 16.116 3.86687L18.116 5.10812C20.0131 6.28551 20.9616 6.87421 21.4808 7.82274"
+        stroke-width="1.5"
+        stroke-linecap="round"
+      />
+    </svg>
+  </a>
+  <a
+    class="flex items-center justify-center gap-2 p-3 transition-colors rounded-full hover:bg-emerald-50 cursor-pointer"
+    title="تسجيل الخروج"
+    aria-label="تسجيل الخروج"
+  >
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      class="h-6 w-6 text-gray-500 stroke-gray-500"
+      viewBox="0 0 24 24"
+      fill="none"
+    >
+      <path
+        d="M12 2C17.5228 2 22 6.47715 22 12C22 13.8214 21.513 15.5291 20.6622 17M5 4.85857C3.14864 6.67349 2 9.20261 2 12C2 17.5228 6.47715 22 12 22C13.8214 22 15.5291 21.513 17 20.6622"
+        stroke-width="1.5"
+        stroke-linecap="round"
+      />
+      <path
+        d="M5 12C5 13.4872 5.46381 14.8662 6.25469 16M12 5C15.866 5 19 8.13401 19 12C19 15.866 15.866 19 12 19C10.9264 19 9.90926 18.7583 9 18.3264"
+        stroke-width="1.5"
+        stroke-linecap="round"
+      />
+      <path
+        d="M12 16C14.2091 16 16 14.2091 16 12C16 9.79086 14.2091 8 12 8"
+        stroke-width="1.5"
+        stroke-linecap="round"
+      />
+    </svg>
+  </a>
+  <a
+    class="flex items-center justify-center gap-2 p-3 transition-colors rounded-full hover:bg-emerald-50 cursor-pointer"
+    title="تسجيل الخروج"
+    aria-label="تسجيل الخروج"
+  >
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      class="h-6 w-6 text-gray-500 stroke-gray-500"
+      viewBox="0 0 24 24"
+      fill="none"
+    >
+      <path
+        d="M17 2.45597C17.7415 2.59747 18.1811 2.75299 18.5609 3.22083C19.0367 3.80673 19.0115 4.43998 18.9612 5.70647C18.7805 10.2595 17.7601 16 12.0002 16C6.24021 16 5.21983 10.2595 5.03907 5.70647C4.98879 4.43998 4.96365 3.80673 5.43937 3.22083C5.91508 2.63494 6.48445 2.53887 7.62318 2.34674C8.74724 2.15709 10.2166 2 12.0002 2C12.7184 2 13.3857 2.02548 14 2.06829"
+        stroke-width="1.5"
+        stroke-linecap="round"
+      />
+      <path
+        d="M19 5L19.9486 5.31621C20.9387 5.64623 21.4337 5.81124 21.7168 6.20408C22 6.59692 22 7.11873 21.9999 8.16234L21.9999 8.23487C21.9999 9.09561 21.9999 9.52598 21.7927 9.87809C21.5855 10.2302 21.2093 10.4392 20.4569 10.8572L17.5 12.5"
+        stroke-width="1.5"
+      />
+      <path
+        d="M4.99994 5L4.05132 5.31621C3.06126 5.64623 2.56623 5.81124 2.2831 6.20408C1.99996 6.59692 1.99997 7.11873 2 8.16234L2 8.23487C2.00003 9.09561 2.00004 9.52598 2.20723 9.87809C2.41441 10.2302 2.79063 10.4392 3.54305 10.8572L6.49994 12.5"
+        stroke-width="1.5"
+      />
+      <path d="M12 17V19" stroke-width="1.5" stroke-linecap="round" />
+      <path
+        d="M15.5 22H8.5L8.83922 20.3039C8.93271 19.8365 9.34312 19.5 9.8198 19.5H14.1802C14.6569 19.5 15.0673 19.8365 15.1608 20.3039L15.5 22Z"
+        stroke-width="1.5"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      />
+      <path d="M18 22H6" stroke-width="1.5" stroke-linecap="round" />
+    </svg>
+  </a>
+  <a
+    class="flex items-center justify-center gap-2 p-3 transition-colors stroke-gray-500 rounded-full hover:bg-emerald-50 cursor-pointer"
+    routerLink="/settings"
+    routerLinkActive="bg-emerald-600 stroke-white hover:bg-emerald-600"
+    title="الاعدادات"
+    aria-label="الاعدادات"
+  >
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      class="h-6 w-6"
+      viewBox="0 0 24 24"
+      fill="none"
+    >
+      <path
+        d="M14 14.5C14 12.8431 15.3431 11.5 17 11.5C18.6569 11.5 20 12.8431 20 14.5C20 16.1569 18.6569 17.5 17 17.5C15.3431 17.5 14 16.1569 14 14.5Z"
+        stroke-width="1.5"
+      />
+      <path
+        d="M4 9.5C4 11.1569 5.34315 12.5 7 12.5C8.65685 12.5 10 11.1569 10 9.5C10 7.84315 8.65685 6.5 7 6.5C5.34315 6.5 4 7.84315 4 9.5Z"
+        stroke-width="1.5"
+      />
+      <path
+        d="M7.00001 13L7 18M7.00001 21.0001L7.00001 22.0001"
+        stroke-width="1.5"
+        stroke-linecap="round"
+      />
+      <path
+        d="M17 11.0001L17 6.0001M17 3.00002L17 2"
+        stroke-width="1.5"
+        stroke-linecap="round"
+      />
+      <path d="M17 22L17 18" stroke-width="1.5" stroke-linecap="round" />
+      <path d="M7 2L7 6" stroke-width="1.5" stroke-linecap="round" />
+    </svg>
+  </a>
+  <a
+    class="flex items-center justify-center gap-2 p-3 transition-colors rounded-full hover:bg-emerald-50 cursor-pointer"
+    title="تسجيل الخروج"
+    aria-label="تسجيل الخروج"
+  >
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      class="h-6 w-6 text-gray-500 stroke-gray-500"
+      viewBox="0 0 24 24"
+      fill="none"
+    >
+      <circle cx="12" cy="6" r="4" stroke-width="1.5" />
+      <path
+        d="M19.9975 18C20 17.8358 20 17.669 20 17.5C20 15.0147 16.4183 13 12 13C7.58172 13 4 15.0147 4 17.5C4 19.9853 4 22 12 22C14.231 22 15.8398 21.8433 17 21.5634"
+        stroke-width="1.5"
+        stroke-linecap="round"
+      />
+    </svg>
+  </a>
+  <a
+    class="flex items-center justify-center gap-2 p-3 transition-colors rounded-full hover:bg-rose-50 cursor-pointer"
+    title="تسجيل الخروج"
+    aria-label="تسجيل الخروج"
+  >
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      class="h-7 w-7 fill-rose-500"
+      viewBox="0 0 24 24"
+      fill="none"
+      (click)="logout()"
+    >
+      <path
+        d="M12 21C10.2211 20.9984 8.48259 20.4697 7.004 19.4807C5.52542 18.4916 4.37308 17.0866 3.69255 15.443C3.01201 13.7995 2.8338 11.9911 3.18041 10.2463C3.52702 8.50153 4.38292 6.89859 5.63999 5.63995C5.70894 5.56919 5.79135 5.51296 5.88238 5.47456C5.97341 5.43616 6.0712 5.41638 6.16999 5.41638C6.26879 5.41638 6.36658 5.43616 6.4576 5.47456C6.54863 5.51296 6.63105 5.56919 6.69999 5.63995C6.84044 5.78058 6.91933 5.9712 6.91933 6.16995C6.91933 6.3687 6.84044 6.55933 6.69999 6.69995C5.96312 7.38657 5.3721 8.21458 4.96218 9.13457C4.55226 10.0546 4.33184 11.0477 4.31408 12.0547C4.29631 13.0618 4.48155 14.062 4.85877 14.9959C5.23598 15.9298 5.79742 16.7781 6.50961 17.4903C7.2218 18.2025 8.07013 18.764 9.00402 19.1412C9.9379 19.5184 10.9382 19.7036 11.9452 19.6859C12.9522 19.6681 13.9454 19.4477 14.8654 19.0378C15.7854 18.6278 16.6134 18.0368 17.3 17.3C17.9978 16.605 18.5515 15.779 18.9294 14.8695C19.3072 13.96 19.5017 12.9848 19.5017 12C19.5017 11.0151 19.3072 10.0399 18.9294 9.13039C18.5515 8.22088 17.9978 7.39493 17.3 6.69995C17.1595 6.55933 17.0807 6.3687 17.0807 6.16995C17.0807 5.9712 17.1595 5.78058 17.3 5.63995C17.3689 5.56919 17.4514 5.51296 17.5424 5.47456C17.6334 5.43616 17.7312 5.41638 17.83 5.41638C17.9288 5.41638 18.0266 5.43616 18.1176 5.47456C18.2086 5.51296 18.291 5.56919 18.36 5.63995C19.6171 6.89859 20.473 8.50153 20.8196 10.2463C21.1662 11.9911 20.988 13.7995 20.3074 15.443C19.6269 17.0866 18.4746 18.4916 16.996 19.4807C15.5174 20.4697 13.7789 20.9984 12 21Z"
+      />
+      <path
+        d="M12 12.75C11.8019 12.7474 11.6126 12.6676 11.4725 12.5275C11.3324 12.3874 11.2526 12.1981 11.25 12V4C11.25 3.80109 11.329 3.61032 11.4697 3.46967C11.6103 3.32902 11.8011 3.25 12 3.25C12.1989 3.25 12.3897 3.32902 12.5303 3.46967C12.671 3.61032 12.75 3.80109 12.75 4V12C12.7474 12.1981 12.6676 12.3874 12.5275 12.5275C12.3874 12.6676 12.1981 12.7474 12 12.75Z"
+      />
+    </svg>
+  </a>
+</nav>

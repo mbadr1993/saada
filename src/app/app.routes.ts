@@ -15,4 +15,24 @@ export const routes: Routes = [
       ),
     canActivate: [authGuard],
   },
+  {
+    path: 'settings',
+    canActivate: [authGuard],
+    children: [
+      {
+        path: '',
+        loadComponent: () =>
+          import('./pages/settings/settings.component').then(
+            (m) => m.SettingsComponent
+          ),
+      },
+      {
+        path: 'students',
+        loadComponent: () =>
+          import('./pages/students-settings/students-settings.component').then(
+            (m) => m.StudentsSettingsComponent
+          ),
+      },
+    ],
+  },
 ];

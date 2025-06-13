@@ -1,0 +1,164 @@
+<div class="w-full h-full flex flex-col gap-4 p-4">
+  <div class="flex flex-col">
+    <h1 class="text-3xl font-bold text-emerald-800">
+      {{ "settings.title" | translate }}
+    </h1>
+    <p class="text-gray-600 mt-2">
+      {{ "settings.subtitle" | translate }}
+    </p>
+  </div>
+
+  <div class="grid grid-cols-2 gap-6 mb-23">
+    <a routerLink="students" class="col-start-1 col-end-1">
+      <app-card>
+        <div class="flex flex-col items-center text-center">
+          <span class="text-emerald-600 text-4xl mb-2">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="h-10 w-10 inline stroke-emerald-600"
+              viewBox="0 0 24 24"
+              fill="none"
+            >
+              <circle cx="9" cy="9" r="2" stroke-width="1.5" />
+              <path
+                d="M13 15C13 16.1046 13 17 9 17C5 17 5 16.1046 5 15C5 13.8954 6.79086 13 9 13C11.2091 13 13 13.8954 13 15Z"
+                stroke-width="1.5"
+              />
+              <path
+                d="M22 12C22 15.7712 22 17.6569 20.8284 18.8284C19.6569 20 17.7712 20 14 20H10C6.22876 20 4.34315 20 3.17157 18.8284C2 17.6569 2 15.7712 2 12C2 8.22876 2 6.34315 3.17157 5.17157C4.34315 4 6.22876 4 10 4H14C17.7712 4 19.6569 4 20.8284 5.17157C21.298 5.64118 21.5794 6.2255 21.748 7"
+                stroke-width="1.5"
+                stroke-linecap="round"
+              />
+              <path d="M19 12H15" stroke-width="1.5" stroke-linecap="round" />
+              <path d="M19 9H14" stroke-width="1.5" stroke-linecap="round" />
+              <path d="M19 15H16" stroke-width="1.5" stroke-linecap="round" />
+            </svg>
+          </span>
+          <div class="font-semibold text-lg text-emerald-800">
+            {{ "settings.students" | translate }}
+          </div>
+          <div class="text-gray-500 text-sm mt-1">
+            {{ "settings.studentsDesc" | translate }}
+          </div>
+        </div>
+      </app-card>
+    </a>
+    <a href="/settings/system" class="col-start-2 col-end-2">
+      <app-card>
+        <div class="flex flex-col items-center text-center">
+          <span class="text-emerald-600 text-4xl mb-2">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="h-10 w-10 inline stroke-emerald-600"
+              viewBox="0 0 24 24"
+              fill="none"
+            >
+              <path
+                d="M22 14C22 10.2288 22 8.34315 20.8284 7.17157C20.0781 6.42122 19.0348 6.15144 17.3909 6.05445C16.468 6 15.3559 6 14 6H10C8.64413 6 7.53199 6 6.60915 6.05445C4.96519 6.15144 3.92193 6.42122 3.17157 7.17157C2 8.34315 2 10.2288 2 14C2 17.7712 2 19.6569 3.17157 20.8284C4.34315 22 6.22876 22 10 22H14C17.7712 22 19.6569 22 20.8284 20.8284C21.4816 20.1752 21.7706 19.3001 21.8985 18"
+                stroke-width="1.5"
+                stroke-linecap="round"
+              />
+              <path
+                d="M6.60938 6.05445C7.43282 6.03358 8.15925 5.45491 8.43944 4.68032C8.44806 4.65649 8.4569 4.62999 8.47457 4.57697L8.50023 4.5C8.54241 4.37344 8.56351 4.31014 8.58608 4.254C8.87427 3.53712 9.54961 3.05037 10.3208 3.00366C10.3812 3 10.4479 3 10.5814 3H13.4191C13.5525 3 13.6192 3 13.6796 3.00366C14.4508 3.05037 15.1262 3.53712 15.4144 4.254C15.4369 4.31014 15.458 4.37343 15.5002 4.5L15.5259 4.57697C15.5435 4.62992 15.5524 4.65651 15.561 4.68032C15.8412 5.45491 16.5676 6.03358 17.3911 6.05445"
+                stroke-width="1.5"
+              />
+              <path
+                d="M21.6618 8.71973C18.6519 10.6761 17.147 11.6543 15.5605 12.1472C13.2416 12.8677 10.7586 12.8677 8.43963 12.1472C6.85313 11.6543 5.34822 10.6761 2.33838 8.71973"
+                stroke-width="1.5"
+                stroke-linecap="round"
+              />
+              <path d="M8 11V13" stroke-width="1.5" stroke-linecap="round" />
+              <path d="M16 11V13" stroke-width="1.5" stroke-linecap="round" />
+            </svg>
+          </span>
+
+          <div class="font-semibold text-lg text-emerald-800">
+            {{ "settings.teachers" | translate }}
+          </div>
+          <div class="text-gray-500 text-sm mt-1">
+            {{ "settings.teachersDesc" | translate }}
+          </div>
+        </div>
+      </app-card>
+    </a>
+    <a href="/settings/general" class="col-start-1 col-end-3">
+      <app-card>
+        <div class="flex flex-col items-center text-center">
+          <span class="text-emerald-600 text-4xl mb-2">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="h-10 w-10 inline stroke-emerald-600"
+              viewBox="0 0 24 24"
+              fill="none"
+            >
+              <path
+                d="M12 2C17.5228 2 22 6.47715 22 12C22 13.8214 21.513 15.5291 20.6622 17M5 4.85857C3.14864 6.67349 2 9.20261 2 12C2 17.5228 6.47715 22 12 22C13.8214 22 15.5291 21.513 17 20.6622"
+                stroke-width="1.5"
+                stroke-linecap="round"
+              />
+              <path
+                d="M5 12C5 13.4872 5.46381 14.8662 6.25469 16M12 5C15.866 5 19 8.13401 19 12C19 15.866 15.866 19 12 19C10.9264 19 9.90926 18.7583 9 18.3264"
+                stroke-width="1.5"
+                stroke-linecap="round"
+              />
+              <path
+                d="M12 16C14.2091 16 16 14.2091 16 12C16 9.79086 14.2091 8 12 8"
+                stroke-width="1.5"
+                stroke-linecap="round"
+              />
+            </svg>
+          </span>
+          <div class="font-semibold text-lg text-emerald-800">
+            {{ "settings.groups" | translate }}
+          </div>
+          <div class="text-gray-500 text-sm mt-1">
+            {{ "settings.groupsDesc" | translate }}
+          </div>
+        </div>
+      </app-card>
+    </a>
+    <a href="/settings/general" class="col-start-1 col-end-3">
+      <app-card>
+        <div class="flex flex-col items-center text-center">
+          <span class="text-emerald-600 text-4xl mb-2">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="h-10 w-10 inline stroke-emerald-600"
+              viewBox="0 0 24 24"
+              fill="none"
+            >
+              <path
+                d="M17 2.45597C17.7415 2.59747 18.1811 2.75299 18.5609 3.22083C19.0367 3.80673 19.0115 4.43998 18.9612 5.70647C18.7805 10.2595 17.7601 16 12.0002 16C6.24021 16 5.21983 10.2595 5.03907 5.70647C4.98879 4.43998 4.96365 3.80673 5.43937 3.22083C5.91508 2.63494 6.48445 2.53887 7.62318 2.34674C8.74724 2.15709 10.2166 2 12.0002 2C12.7184 2 13.3857 2.02548 14 2.06829"
+                stroke-width="1.5"
+                stroke-linecap="round"
+              />
+              <path
+                d="M19 5L19.9486 5.31621C20.9387 5.64623 21.4337 5.81124 21.7168 6.20408C22 6.59692 22 7.11873 21.9999 8.16234L21.9999 8.23487C21.9999 9.09561 21.9999 9.52598 21.7927 9.87809C21.5855 10.2302 21.2093 10.4392 20.4569 10.8572L17.5 12.5"
+                stroke-width="1.5"
+              />
+              <path
+                d="M4.99994 5L4.05132 5.31621C3.06126 5.64623 2.56623 5.81124 2.2831 6.20408C1.99996 6.59692 1.99997 7.11873 2 8.16234L2 8.23487C2.00003 9.09561 2.00004 9.52598 2.20723 9.87809C2.41441 10.2302 2.79063 10.4392 3.54305 10.8572L6.49994 12.5"
+                stroke-width="1.5"
+              />
+              <path d="M12 17V19" stroke-width="1.5" stroke-linecap="round" />
+              <path
+                d="M15.5 22H8.5L8.83922 20.3039C8.93271 19.8365 9.34312 19.5 9.8198 19.5H14.1802C14.6569 19.5 15.0673 19.8365 15.1608 20.3039L15.5 22Z"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+              <path d="M18 22H6" stroke-width="1.5" stroke-linecap="round" />
+            </svg>
+          </span>
+
+          <div class="font-semibold text-lg text-emerald-800">
+            {{ "settings.challenges" | translate }}
+          </div>
+          <div class="text-gray-500 text-sm mt-1">
+            {{ "settings.challengesDesc" | translate }}
+          </div>
+        </div>
+      </app-card>
+    </a>
+  </div>
+</div>
